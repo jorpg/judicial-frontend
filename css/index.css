@@ -3,6 +3,29 @@
  * Copyright 2013-2017 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-half-slider/blob/master/LICENSE)
  */
+ html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+.content {
+  padding: 20px;
+  min-height: 100%;
+  margin: 0 auto -50px;
+}
+.footer,
+.push {
+  ;
+}
+footer {
+  background: #757674;
+  color: white;
+  line-height: 50px;
+  padding: 0 20px;
+  margin-bottom: 0px;
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
  a {
     color: #000f73;
     text-decoration: none;
@@ -120,6 +143,33 @@ bootstrap.min.css:5
 .center-item{
   padding-left: 52px;
 }
+.title-secction{
+  margin: 40px 0px;
+  margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: #000;
+
+}
+.title-secction-multi{
+  margin: 40px 0px;
+  margin-bottom: 0px;
+  margin-top: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  color: #000;
+}
+.title-noti{
+  margin: 0px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.text-comment{
+  font-size: 10px;
+  background-color: #ccc;
+  padding: 8px;
+  margin-bottom: 25px;
+}
 .item-slider{
   width: 300px;
   height: 300px;
@@ -155,85 +205,116 @@ bootstrap.min.css:5
   font-size: 16px;
   opacity: 1;
 }
-/*.multi-item-carousel{
-  .carousel-inner{
-    > .item{
-      transition: 500ms ease-in-out left;
-    }
-    .active{
-      &.left{
-        left:-33%;
-      }
-      &.right{
-        left:33%;
-      }
-    }
-    .next{
-      left: 33%;
-    }
-    .prev{
-      left: -33%;
-    }
-    @media all and (transform-3d), (-webkit-transform-3d) {
-      > .item{
-        // use your favourite prefixer here
-        transition: 500ms ease-in-out left;
-        transition: 500ms ease-in-out all;
-        backface-visibility: visible;
-        transform: none!important;
-      }
-    }
-  }
-  .carouse-control{
-    &.left, &.right{
-      background-image: none;
-    }
-  }
-}*/
-/* override position and transform in 3.3.x */
-.carousel-inner .active.left { left: -33%; }
-.carousel-inner .next        { left:  33%; }
-.carousel-inner .prev        { left: -33%; }
-.carousel-control.left,.carousel-control.right {background-image:none;}
+.content-twitter{
+  height: 500px;
+  overflow: scroll;
+}
+.thumbnail.right-caption > img {
+    float: left;
+    margin-right: 9px;
+}
 
-.carousel-multi{
-	.carousel-inner{
-    > .item{
-      transition: 500ms ease-in-out left;
+.thumbnail{
+  display: block;
+  padding: 0px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: none;
+  border-radius: 0px;
+  -webkit-transition: border .2s ease-in-out;
+  -o-transition: border .2s ease-in-out;
+  transition: border .2s ease-in-out;
+}
 
-      > .media-card{
-        background: #333;
-        border-right: 10px solid #fff;
-			  display: table-cell;
-			  width: 1%;
+.thumbnail.right-caption > .caption {
+    padding: 4px;
+}
+ol, ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    list-style-type: none;
+    padding: 0px;
+}
+li > a{
+  color: #fff;
+}
+.link-footer{
+  height: 24px;
+}
+.btn-left{
 
-        &:last-of-type{
-          border-right: none;
-        }
-      }
-    }
-    .active{
+}
+.btn-right{
+
+}
+.navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: 440px !important;
+}
+
+/* Responsive media query */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .item-slider{
+      width: 300px;
+      height: 300px;
+      background-color: #e8e6e6;
       display: table;
-      &.left{
-        left:-33%;
-      }
-      &.right{
-        left:33%;
-      }
+      margin: 0 auto;
     }
-    .next{
-      left: 33%;
+    .btn-left{
+      top: 40%;
+      left: 20px;
+      width: 50px;
+      height: 85px;
     }
-    .prev{
-      left: -33%;
+    .btn-right{
+      top: 40%;
+      right: 20px !important;
+      width: 50px;
+      height: 85px;
     }
-    @media all and (transform-3d), (-webkit-transform-3d) {
-      > .item{
-        // use your favourite prefixer here
-        transition: 500ms ease-in-out all;
-        backface-visibility: visible;
-        transform: none!important;
-      }
+    .btn-menu{
+      background-color: #fff;
+      border: none;
+      top: 18px;
     }
+    .logo-responsive{
+      width: 70px;
+    }
+    .menu-search {
+    margin-right: -15px;
+    margin-top: 16px;
+    padding: 10px;
+    background-color: #36438a;
+    color: #fff;
+    top: -10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: table;
+    margin: 0 auto;
   }
+  .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #fff;
+  }
+  .pull-right{
+    float: none !important;
+  }
+  .contact-dat{
+    color: #888;
+    font-size: 13px;
+  }
+  .multimedia-movil{
+    width: 100% !important;
+  }
+  .p-movil{
+    padding: 30px;
+  }
+  .info-contact{
+    font-size: 12px;
+  }
+  .m-b{
+    margin-bottom: 20px;
+  }
+
 }
