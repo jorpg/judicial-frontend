@@ -263,16 +263,32 @@ li > a{
       margin: 0 auto;
     }
     .btn-left{
-      top: 40%;
+      top: 35%;
       left: 20px;
       width: 50px;
       height: 85px;
+      padding: 23px 5px;
     }
     .btn-right{
-      top: 40%;
+      top: 35%;
       right: 20px !important;
       width: 50px;
       height: 85px;
+      padding: 23px 5px;
+    }
+    .btn-left-multi{
+      top: 35%;
+      left: -20px;
+      width: 50px;
+      height: 85px;
+      padding: 23px 5px;
+    }
+    .btn-right-multi{
+      top: 35%;
+      right: -20px !important;
+      width: 50px;
+      height: 85px;
+      padding: 23px 5px;
     }
     .btn-menu{
       background-color: #fff;
@@ -315,6 +331,9 @@ li > a{
   }
   .m-b{
     margin-bottom: 20px;
+  }
+  .nav-link{
+    text-align: center !important;
   }
 
 }
